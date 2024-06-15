@@ -1,0 +1,53 @@
+.grid{
+    display: grid;
+}
+.grid{
+    background-image: url("personasauto.gif");
+    display: inline-block;
+    margin-bottom: 30%;
+    margin-right: 30%;
+    background-color: rgba(230, 173, 69, 0.945);
+    margin-top: 10%;
+    margin-left: 30%;
+    border-radius: 6px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 600px;
+    min-width: 200px;
+    padding: auto;
+    gap: 2px;
+    grid-auto-flow: dense;
+    border-radius: 6px;
+    grid-template-columns: 700px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+}
+
+.header{
+    padding: 9%;
+    border-radius: 12px;
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: rgb(115,115,201,0.767);
+    padding-left: 40px;
+    
+}
+a{
+    margin-left: 25%;
+}
+nav{
+    margin-bottom: 15px;
+    background-color: rgba(241, 199, 122, 0.781);
+    margin-top:  10px;
+    padding: 80px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    margin-left: 20%;
+    border-radius: 3%;
+    font-family: sans-serif;
+}
