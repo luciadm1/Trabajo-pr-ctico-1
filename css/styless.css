@@ -1,0 +1,202 @@
+body,div {
+    box-sizing:border-box;
+    display: grid;
+}
+nav,header,footer,aside,main {
+    padding: 20px;
+    border: 2px;
+}
+.grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat (auto-fill, minmax(3,1fr));
+    grid-template-rows: auto 1fr auto;
+    margin: auto;
+    gap: 15px;
+    padding: 10px;
+    min-height: 90vh;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer"
+
+}
+@media screen and (max-width:768px ){
+    .grid {
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+    .lista{
+        justify-content: center;
+    }
+    .main{
+        font-size: 14px;
+    }
+    .aside{
+        font-size: 14px;
+    }
+    .img1 ,.img2 ,.img3 ,.img4 ,.img5{
+        border-radius: 7px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1450px ){
+    .grid {
+        align-items: center;
+        gap: 15px;
+        grid-auto-columns: repeat(auto-fit,minmax (2,1fr));
+        grid-template-rows: 1fr, 1fr,1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+    .nav {
+        justify-self: center;
+        align-items: normal;
+    }
+    .lista{
+        justify-content: center;
+    }
+    .div{
+        justify-content: space-around;
+    }
+    .img0{
+        align-content: flex-end;
+    }
+    .img1,.img2, .img3, .img4, .img5 {
+        border-radius: 7px;
+    }
+    .main{
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .aside{
+        font-size: 15px;
+        gap: 10px;
+    }
+    
+}
+
+header{
+    background-color: rgba(241, 199, 122, 0.781);
+    padding-left: 40%;
+    grid-area: header;
+    align-items: center;
+    font-size: 30px; color: rgb(247, 247, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 6px;
+
+}
+.icono-header{
+    font-weight: 200;
+
+}
+
+footer {
+    font-family:  sans-serif;
+    grid-area: footer;
+    border-radius: 6px;
+}
+nav {
+    grid-area: nav;
+    border-radius: 6px;
+    background-color: rgb(115,115,201,0.767);
+}
+
+main {
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 6px;
+    grid-area: main;
+    min-width: 40%;
+    background-color: rgb(115,115,201,0.767);
+}
+h2{
+    flex: 1;
+}
+p{
+    flex: 1;
+    font-family:sans-serif;
+    font-size: medium;
+    font-weight: 200;
+}
+aside{
+    font-size: small;
+    font-family:sans-serif;
+    border-radius: 6px;
+    grid-area: aside;
+    min-width: 40%;
+    background-color: rgb(115,115,201,0.767);
+}
+.grid {
+    max-width: 70%;
+    min-width: 30%;
+    background-image: url("fondo.jpg");
+}
+.lista {
+    padding: 10px;
+    align-items: center;
+    background-color: rgba(115, 115, 201, 0.767);
+}
+li{
+    border-top-right-radius: 3px;
+    font-family:sans-serif;
+    font-size: 16px;
+    list-style: none
+    
+}
+.inicio {
+    font-size: medium;
+    margin-inline: 12px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 140px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(213, 213, 214);
+    border-radius: 6px; 
+    color:black
+}
+.inicio:hover {background-color: rgb(231,163,14);}
+.nosotros{
+    font-family: sans-serif;
+    font-size: medium;
+    margin-inline: 9px;
+    margin-left: 25px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 8px;
+    padding-bottom: 10px;
+    background-color: rgba(241, 199, 122, 0.781);
+    align-items: center;
+}
+
+.crear-cuenta{
+    margin-left: 0px;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-right: 70px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: rgba(241, 199, 122, 0.781);
+}
+.nosotros:hover, .crear-cuenta:hover{
+    background-color: rgb(213, 213, 214);
+}
+a{
+    font-family: sans-serif;
+    font-size: large;
+}
+.img1, .img2, .img3 , .img4, .img5{
+    border-radius: 6px;
+}
