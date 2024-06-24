@@ -8,21 +8,21 @@ function validarFormulario() {
       if (nombre==""){
 
         alert ("Completar nombre");
-        return;
+        return 0;
      }
 
      if (telefono==""){
       alert("Completar teléfono");
-      return
+      return 0;
      }
 
      if (mail==""){
       alert("Ingresá tu mail");
-      return
+      return 0;
      }
 
      if (password==""){
       alert("Ingresá tu contraseña");
-      return
+      return 0;
      }
 }
