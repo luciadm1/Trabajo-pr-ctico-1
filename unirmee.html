@@ -33,7 +33,7 @@
             <label for="password">Contraseña</label>
             <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" required><br>
 
-            <input type="button" value="Enviar" onclick= 'return validarFormulario()' id="Enviar"> <br>
+            <input type="button" value="Enviar" onclick='return validandomail(form.mail.value); return validarFormulario(); return validarTelefono(form.telefono.value)' id="Enviar"> <br>
 
             <input type="text"  placeholder="Comentarios" name="Comentarios" id="Comentarios">
         </form>
