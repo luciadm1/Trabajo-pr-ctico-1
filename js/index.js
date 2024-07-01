@@ -27,3 +27,29 @@ function validarFormulario() {
   alert("Formulario enviado con éxito!");
   return true;
 }
+function validandomail(mail) {
+    var validandomail1= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    var mailValido= validandomail1.test(mail);
+
+      if(mailValido==true){
+        alert('Mail Validado!');
+      }
+
+      else{
+        alert('Mail inválido,vuelva a intentar')
+      }
+
+}
+
+function validarTelefono(telefono){
+  var telefonoValidado= /^\d{13}$/;
+
+  if(!telefonoValidado.test(telefono)){
+    return false;
+  }
+
+  else{
+    return true;
+  }
+  
+}
